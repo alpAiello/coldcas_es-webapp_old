@@ -1,0 +1,30 @@
+$primary-foreground-color: #567435;
+$primary-background-color: #2b333f;
+$center-big-play-button: true;
+
+.video-js {
+  color: $primary-foreground-color;
+  font-size: 10px;
+}
+
+.vjs-default-skin .vjs-big-play-button {
+  border: .06666em solid $primary-foreground-color;
+  $big-play-width: 3em;
+  $big-play-height: 1.5em;
+
+  border-radius: 10em;
+  font-size: 5em;
+  height: $big-play-height;
+  line-height: $big-play-height;
+  width: $big-play-width;
+
+  @if $center-big-play-button {
+    left: 50%;
+    margin-left: -($big-play-width / 2);
+    margin-top: -($big-play-height / 2);
+    top: 50%;
+  } @else {
+    left: .5em;
+    top: .5em;
+  }
+}
