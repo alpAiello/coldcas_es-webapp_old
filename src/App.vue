@@ -35,7 +35,7 @@ export default {
   },
   async mounted() {
     const result = await axios.get(
-      "https://aqueous-savannah-23780.herokuapp.com/projects?_sort=projectDate:desc"
+      "https://coldcases-cms.herokuapp.com/projects?_sort=projectDate:desc"
     );
     this.projects = result.data;
     console.log("-> result.data", result.data);
