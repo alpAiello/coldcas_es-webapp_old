@@ -1,6 +1,6 @@
 <template>
   <div class="Sidebar">
-    <ProjectMenu :view-size="viewSize" :projects="projects"></ProjectMenu>
+    <ProjectMenu class="ProjectMenu" :view-size="viewSize" :projects="projects"></ProjectMenu>
     <div class="toggleButtonContainer">
       <ToggleSidebarButton
         class="toggleButton"
@@ -36,10 +36,11 @@ export default {
   methods: {
     toggleSidebar() {
       if (this.projectMenuIsOpen) {
-        gsap.to(".Sidebar", { duration: 1, x: "0vw", ease: "power4" });
+        gsap.to(".Sidebar", { duration: 1, x: "0%", ease: "power4" });
         gsap.to(".toggleButton", { duration: 1, rotation: "0" });
       } else {
-        gsap.to(".Sidebar", { duration: 1, x: "50vw", ease: "power4" });
+        const sidebarWidth = document.querySelector(".ProjectMenu").offsetWidth
+        gsap.to(".Sidebar", { duration: 1, x: sidebarWidth, ease: "power4" });
         gsap.to(".toggleButton", { duration: 0.5, rotation: "45" });
       }
       let documentOverflow = document.getElementsByTagName("body")[0].style;
@@ -63,11 +64,20 @@ export default {
 .Sidebar {
   position: fixed;
   top: 0;
-  left: -50vw;
   z-index: 100;
   display: flex;
   flex-direction: row;
   height: 100vh;
+}
+@media (min-width: 1200px) {
+  .Sidebar {
+    left: -50vw;
+  }
+}
+@media (max-width: 1200px) {
+  .Sidebar {
+    left: -90vw;
+  }
 }
 .toggleButtonContainer {
 }

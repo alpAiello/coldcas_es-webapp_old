@@ -51,7 +51,6 @@ export default {
   mounted() {
     this.currentFilterList = []
     console.log("-> this.projects", this.projects);
-    console.log("-> this.currentProjects", this.currentProjects);
     console.log("viewsize projectmenu", this.viewSize);
   },
 };

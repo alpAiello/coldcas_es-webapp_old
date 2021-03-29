@@ -1,7 +1,7 @@
 <template>
   <div :class="imageViewClass">
     <img
-        :src="view.media.formats[viewSize].url"
+        :src="view.media.url"
         :alt="view.media.alternativeText"
     />
   </div>
@@ -29,19 +29,19 @@ export default {
 </script>
 
 <style >
-.ImageView-medium, .ImageView-large {
-  height: 102vh;
+.ImageView-main {
+  height: 100vh;
   width: 100%;
   overflow: hidden;
   position: relative;
 }
-.ImageView-small,.ImageView-thumbnail{
+.ImageView-sidebar{
   height: 100%;
   width: 100%;
   overflow: hidden;
   position: relative;
 }
-.ImageView-medium img, .ImageView-small img, .ImageView-large img,.ImageView-thumbnail img {
+.ImageView-main img, .ImageView-sidebar img {
   height: 100%;
   width: 100%;
   object-position: center;
