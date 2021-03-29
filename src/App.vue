@@ -23,8 +23,8 @@ export default {
   data: () => {
     return {
       projects: [],
-      viewSizeMain: "large",
-      viewSizeSidebar: "small",
+      viewSizeMain: "main",
+      viewSizeSidebar: "sidebar",
     };
   },
   methods: {

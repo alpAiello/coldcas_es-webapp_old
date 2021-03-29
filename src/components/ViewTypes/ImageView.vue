@@ -23,7 +23,7 @@ export default {
   },
   name: "ImageView",
   mounted() {
-    console.log("viewsize bug", this.view.media.formats[this.viewSize])
+    console.log("viewsize bug", this.view)
   }
 };
 </script>

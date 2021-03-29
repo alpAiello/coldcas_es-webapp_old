@@ -1,8 +1,8 @@
 <template>
-  <div v-if="viewSize == 'large'" class="VideoView">
+  <div v-if="viewSize == 'main'" class="VideoView">
     <VideoPlayer :options="videoOptions"></VideoPlayer>
   </div>
-  <div v-if="viewSize == 'small'">
+  <div v-if="viewSize == 'sidebar'">
     <VideoPlayerSmall :options="videoOptions"></VideoPlayerSmall>
   </div>
 </template>
