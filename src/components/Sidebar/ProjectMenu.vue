@@ -7,8 +7,10 @@
         v-for="project in filteredProjects"
         :key="project.id"
       >
-        <Project :project="project" :view-size="viewSize" :only-poster="true">
-        </Project>
+        <router-link :to='{name: "ProjectPortfolio", params: {id: project.id}}'>
+          <Project :project="project" :view-size="viewSize" :only-poster="true">
+          </Project>
+        </router-link>
       </div>
     </div>
   </div>
@@ -31,15 +33,17 @@ export default {
   },
   computed: {
     filteredProjects() {
-      if(this.currentFilterList.length !== 0){
+      if (this.currentFilterList.length !== 0) {
         const checkProjectPassFilter = (project) => {
           return project.artists.some(
-              (artist) => this.currentFilterList.indexOf(artist.name) !== -1
+            (artist) => this.currentFilterList.indexOf(artist.name) !== -1
           );
         };
-      return this.projects.filter((project) => checkProjectPassFilter(project));
+        return this.projects.filter((project) =>
+          checkProjectPassFilter(project)
+        );
       } else {
-        return this.projects
+        return this.projects;
       }
     },
   },
@@ -49,7 +53,7 @@ export default {
     },
   },
   mounted() {
-    this.currentFilterList = []
+    this.currentFilterList = [];
     console.log("-> this.projects", this.projects);
     console.log("viewsize projectmenu", this.viewSize);
   },

@@ -1,29 +1,21 @@
 <template>
   <div id="app">
-      <Sidebar :view-size="viewSizeSidebar" :projects="projects"></Sidebar>
-    <div class="Main">
-      <Project
-        :view-size="viewSizeMain"
-        :only-poster="false"
-        v-for="(project, index) in projects"
-        :key="project.id"
-        :project="projects[index]"
-      ></Project>
-    </div>
+    <Sidebar :view-size="viewSizeSidebar" :projects="projects"></Sidebar>
+    <router-view :projects="projects"/>
   </div>
 </template>
 
 <script>
-import Project from "@/components/Project";
+
 import Sidebar from "@/components/Sidebar/Sidebar";
 import axios from "axios";
+
 
 export default {
   name: "App",
   data: () => {
     return {
       projects: [],
-      viewSizeMain: "main",
       viewSizeSidebar: "sidebar",
     };
   },
@@ -35,18 +27,15 @@ export default {
   },
   async mounted() {
     const result = await axios.get(
-      "https://coldcases-cms.herokuapp.com/projects?_sort=projectDate:desc"
+        "https://coldcases-cms.herokuapp.com/projects?_sort=projectDate:desc"
     );
     this.projects = result.data;
     console.log("-> result.data", result.data);
   },
   components: {
-    Project,
     Sidebar,
   },
-  unmounted() {
-    window.removeEventListener("scroll", this.handleScroll);
-  },
+  unmounted() {},
 };
 </script>
 
@@ -73,5 +62,12 @@ body {
 #app::-webkit-scrollbar {
   display: none;
 }
+.router-link{
+  z-index:500;
+  position: relative;
+  top: 0 ;
+  left: 0;
+}
 
 </style>
+
