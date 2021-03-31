@@ -73,12 +73,18 @@ export default {
   .Sidebar {
     left: -50vw;
   }
+
+  .toggleButtonContainer button{
+    font-size: 5vw;
+  }
 }
+
 @media (max-width: 1200px) {
   .Sidebar {
     left: -90vw;
   }
+.toggleButtonContainer button{
+  font-size: 15vw;
 }
-.toggleButtonContainer {
 }
 </style>

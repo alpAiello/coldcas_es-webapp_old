@@ -10,6 +10,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
+    "fitty": "^2.3.3",
     "gsap": "^3.6.1",
     "markdown-it": "^12.0.4",
     "node-sass": "^5.0.0",

@@ -15,7 +15,7 @@
       v-if="project.content[0].media == null"
     ></TextView>
   </div>
-  <div class=Project v-if="!onlyPoster">
+  <div class="Project" v-if="!onlyPoster">
     <div class="View" v-for="view in project.content" :key="view.id">
       <ImageView
         :view-size="viewSize"

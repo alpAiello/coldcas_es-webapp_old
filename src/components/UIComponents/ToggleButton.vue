@@ -34,14 +34,14 @@ export default {
 }
 @media (min-width: 1200px) {
   .ToggleButton{
-  height: 10vw;
+  height: 10vh;
   width: 10vw;
   font-size: 8vw;
   }
 }
 @media (max-width: 1200px) {
   .ToggleButton{
-    height: 10vw;
+    height: 10vh;
     width: 15vw;
     font-size: 18vw;
   }}

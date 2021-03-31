@@ -115,16 +115,18 @@ export default {
     height: 30vw;
     margin: 1vw 2vw;
     overflow: hidden;
+    border: black solid 1px;
   }
 
   .ProjectHoverText {
     z-index: 600;
     position: absolute;
-    bottom: 0;
+    bottom: 5vw;
     left: 0;
     margin: 2vw;
     color: white;
-    font-size: large;
+    opacity: 0;
+    font-size: 18px;
   }
 }
 @media (max-width: 1200px) {
@@ -145,7 +147,8 @@ export default {
     left: 0;
     margin: 2vw;
     color: white;
-    font-size: large;
+    opacity: 0;
+    font-size: 10px;
   }
 }
 </style>

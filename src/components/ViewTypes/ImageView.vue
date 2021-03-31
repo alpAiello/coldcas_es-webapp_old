@@ -23,7 +23,6 @@ export default {
   },
   name: "ImageView",
   mounted() {
-    console.log("viewsize bug", this.view)
   }
 };
 </script>
@@ -39,12 +38,18 @@ export default {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  position: relative;
+  display: flex;
+  justify-content: center;
 }
-.ImageView-main img, .ImageView-sidebar img {
+.ImageView-main img {
   height: 100%;
   width: 100%;
   object-position: center;
+  object-fit: cover;
+}
+.ImageView-sidebar img {
+  height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 </style>

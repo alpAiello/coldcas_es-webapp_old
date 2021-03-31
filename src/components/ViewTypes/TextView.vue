@@ -1,6 +1,8 @@
 <template>
-  <div class="TextView">
+  <div class="Spacer">
+    <div class="TextView">
     <span class="innerContainer" v-html="textArtHTML"></span>
+    </div>
   </div>
 </template>
 
@@ -23,12 +25,17 @@ export default {
 </script>
 
 <style scoped>
+.Spacer{
+  padding: 10vh;
+}
 .TextView {
-  padding: 15vh 20px 20px 10vw;
-  width: 80%;
-  height:100vh;
-  overflow-x: auto;
-  overflow-y: scroll;
+  margin: auto;
+/*
+  transform: translateY(15vh);
+*/
+  place-content: center;
+  height:80vh;
+  overflow-x: scroll;
 }
 .innerContainer{
   display: block;
@@ -38,6 +45,7 @@ export default {
 }
 .TextView >>> img{
   max-height: 50vh;
+  max-width: 100%;
 }
 
 .TextView span {
