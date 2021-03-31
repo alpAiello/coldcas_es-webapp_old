@@ -2,24 +2,24 @@
   <div class="Sidebar">
     <ProjectMenu class="ProjectMenu" :view-size="viewSize" :projects="projects"></ProjectMenu>
     <div class="toggleButtonContainer">
-      <ToggleSidebarButton
+      <ToggleButton
         class="toggleButton"
         :buttonSymbol="'+'"
-        @toggle-sidebar="toggleSidebar"
-      ></ToggleSidebarButton>
+        @toggle-event="toggleSidebar"
+      ></ToggleButton>
     </div>
   </div>
 </template>
 
 <script>
-import ToggleSidebarButton from "@/components/UIComponents/ToggleSidebarButton";
+import ToggleButton from "@/components/UIComponents/ToggleButton";
 import ProjectMenu from "@/components/Sidebar/ProjectMenu";
 import { gsap } from "gsap";
 
 export default {
   name: "Sidebar",
   components: {
-    ToggleSidebarButton,
+    ToggleButton,
     ProjectMenu,
   },
   props: {
@@ -64,7 +64,7 @@ export default {
 .Sidebar {
   position: fixed;
   top: 0;
-  z-index: 100;
+  z-index: 200;
   display: flex;
   flex-direction: row;
   height: 100vh;
