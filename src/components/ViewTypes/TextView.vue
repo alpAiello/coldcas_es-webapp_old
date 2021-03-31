@@ -5,47 +5,56 @@
 </template>
 
 <script>
-import MarkdownIt from "markdown-it"
-const md= new MarkdownIt()
+import MarkdownIt from "markdown-it";
+const md = new MarkdownIt();
 
 export default {
   props: {
-    view: Object
+    view: Object,
   },
   name: "ImageView",
   computed: {
-    textArtHTML(){
-      console.log(md.render(this.view.TextArt))
-      return md.render(this.view.TextArt)
-
-    }
-}}
-
+    textArtHTML() {
+      console.log(md.render(this.view.TextArt));
+      return md.render(this.view.TextArt);
+    },
+  },
+};
 </script>
 
 <style scoped>
 .TextView {
-height:100vh;
+  height: 100%;
 }
-.TextView >>> p{
+@media (min-width: 1200px) {
+  .TextView {
+    height: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  .TextView {
+    height: 100%;
+  }
+}
+.TextView >>> p {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
-.TextView >>> *{
+.TextView >>> * {
   display: flex;
   flex-direction: column;
   height: 100%;
-overflow: hidden;
+  overflow: hidden;
   margin: 0 1vw;
 }
-.TextView >>> img{
+.TextView >>> img {
   width: 100%;
-  height:inherit;
+  height: inherit;
   object-position: center;
   object-fit: cover;
   margin: 0;
 }
-.TextView span{
+.TextView span {
 }
 </style>

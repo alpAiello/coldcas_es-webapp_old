@@ -50,5 +50,8 @@ export default {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  justify-content: space-between;
+  width:100%;
+  padding: 0 0 2vw 5vw;
 }
 </style>

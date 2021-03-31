@@ -94,6 +94,7 @@ export default {
 .ProjectMenu {
   background-color: #d3c0ff;
   overflow: scroll;
+  padding: 2vw 0 0 0
 }
 .projects {
   background-color: #d3c0ff;
@@ -110,8 +111,10 @@ export default {
 
   .projectContainer {
     position: relative;
-    width: 45vw;
+    width: 40vw;
+    height: 30vw;
     margin: 1vw 2vw;
+    overflow: hidden;
   }
 
   .ProjectHoverText {
@@ -120,7 +123,8 @@ export default {
     bottom: 0;
     left: 0;
     margin: 2vw;
-    color: black;
+    color: white;
+    font-size: large;
   }
 }
 @media (max-width: 1200px) {
@@ -130,15 +134,18 @@ export default {
   .projectContainer {
     position: relative;
     width: 80vw;
+    height: 60vw;
     margin: 1vw 2vw;
+    overflow: hidden;
   }
   .ProjectHoverText {
     z-index: 600;
     position: absolute;
-    bottom: 0;
+    bottom: 5vw;
     left: 0;
     margin: 2vw;
-    color: black;
+    color: white;
+    font-size: large;
   }
 }
 </style>

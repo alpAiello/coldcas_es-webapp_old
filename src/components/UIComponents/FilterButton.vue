@@ -46,11 +46,16 @@ button {
   overflow: visible; /* Edge hides overflow */
   text-transform: none; /* Firefox inherits text-transform */
   -webkit-appearance: button; /* Safari otherwise prevents some styles */
+  background-color: transparent;
+  padding: 0.5vw;
+  border: transparent 2px solid;
 }
 
 .FilterButton {
 }
 .highlighted {
-  background-color: #2b333f;
+  border: black 2px solid;
+  padding: 0.5vw;
+  border-radius: 4px;
 }
 </style>

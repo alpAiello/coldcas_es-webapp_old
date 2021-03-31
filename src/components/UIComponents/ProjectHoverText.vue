@@ -13,5 +13,7 @@ export default {
 
 <style scoped>
 .HoverProjectMenu{
+  filter: drop-shadow(5px 5px 10px black);
+
 }
 </style>
