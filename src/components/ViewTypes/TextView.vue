@@ -1,6 +1,6 @@
 <template>
   <div class="TextView">
-    <span v-html="textArtHTML"></span>
+    <span class="innerContainer" v-html="textArtHTML"></span>
   </div>
 </template>
 
@@ -24,37 +24,22 @@ export default {
 
 <style scoped>
 .TextView {
-  height: 100%;
+  padding: 15vh 20px 20px 10vw;
+  width: 80%;
+  height:100vh;
+  overflow-x: auto;
+  overflow-y: scroll;
 }
-@media (min-width: 1200px) {
-  .TextView {
-    height: 100%;
-  }
+.innerContainer{
+  display: block;
+  column-width: 90vw;
+  column-gap: 10vw;
+  height: 70vh;
 }
-@media (max-width: 1200px) {
-  .TextView {
-    height: 100%;
-  }
+.TextView >>> img{
+  max-height: 50vh;
 }
-.TextView >>> p {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-.TextView >>> * {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  overflow: hidden;
-  margin: 0 1vw;
-}
-.TextView >>> img {
-  width: 100%;
-  height: inherit;
-  object-position: center;
-  object-fit: cover;
-  margin: 0;
-}
+
 .TextView span {
 }
 </style>
