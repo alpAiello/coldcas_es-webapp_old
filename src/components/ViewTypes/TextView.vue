@@ -43,6 +43,9 @@ export default {
   column-gap: 10vw;
   height: 70vh;
 }
+.TextView {
+  text-underline: none;
+}
 .TextView >>> img{
   max-height: 50vh;
   max-width: 100%;

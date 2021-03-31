@@ -51,7 +51,7 @@ export default {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  width:100%;
+  width:35vw;
   padding: 0 0 2vw 5vw;
 }
 </style>

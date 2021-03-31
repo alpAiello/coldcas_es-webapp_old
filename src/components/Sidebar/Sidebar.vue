@@ -75,7 +75,6 @@ export default {
   }
 
   .toggleButtonContainer button{
-    font-size: 5vw;
   }
 }
 

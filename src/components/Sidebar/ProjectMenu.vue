@@ -111,22 +111,20 @@ export default {
 
   .projectContainer {
     position: relative;
-    width: 40vw;
-    height: 30vw;
+    width: 35vw;
     margin: 1vw 2vw;
     overflow: hidden;
-    border: black solid 1px;
+    height:30vw;
   }
 
   .ProjectHoverText {
     z-index: 600;
     position: absolute;
-    bottom: 5vw;
     left: 0;
     margin: 2vw;
     color: white;
     opacity: 0;
-    font-size: 18px;
+    font-size: 12px;
   }
 }
 @media (max-width: 1200px) {
@@ -136,14 +134,13 @@ export default {
   .projectContainer {
     position: relative;
     width: 80vw;
-    height: 60vw;
+    height:60vw;
     margin: 1vw 2vw;
     overflow: hidden;
   }
   .ProjectHoverText {
     z-index: 600;
     position: absolute;
-    bottom: 5vw;
     left: 0;
     margin: 2vw;
     color: white;

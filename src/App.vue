@@ -94,7 +94,7 @@ html {
     z-index: 500;
     position: fixed;
     top:0;
-    right: 0;
+    right: 3vw;
     font-size: 4vw;
   }
 }
@@ -103,7 +103,7 @@ html {
     z-index: 100;
     position: fixed;
     top:0;
-    right: 0;
+    right: 3vw;
     font-size: 6vw;
   }
 }

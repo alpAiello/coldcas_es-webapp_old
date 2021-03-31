@@ -45,7 +45,7 @@ export default {
 
 @media (min-width: 1200px) {
   .PopUp {
-    top: 10vh;
+    top: 15vh;
     bottom: 10vh;
     width: 30vw;
   }
@@ -55,7 +55,7 @@ export default {
 }
 @media (max-width: 1200px) {
   .PopUp {
-    top: 10vh;
+    top: 15vh;
     bottom: 10vh;
     width: 90vw;
   }

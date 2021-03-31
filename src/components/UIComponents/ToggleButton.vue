@@ -34,8 +34,7 @@ export default {
 }
 @media (min-width: 1200px) {
   .ToggleButton{
-  height: 10vh;
-  width: 10vw;
+
   font-size: 8vw;
   }
 }
