@@ -47,7 +47,7 @@ export default {
   .PopUp {
     top: 15vh;
     bottom: 65vh;
-    width: 30vw;
+    width: 20vw;
   }
   .popUpText {
     font-size: 16px;
@@ -57,7 +57,7 @@ export default {
   .PopUp {
     top: 15vh;
     bottom: 65vh;
-    width: 90vw;
+    width: 60vw;
   }
   .popUpText {
     font-size: 12px;
