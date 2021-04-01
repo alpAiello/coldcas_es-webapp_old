@@ -40,7 +40,7 @@ export default {
 <style scoped>
 button {
   font-family: inherit; /* For all browsers */
-  font-size: 100%; /* For all browsers */
+  font-size: 13px; /* For all browsers */
   line-height: 1.15; /* For all browsers */
   margin: 0; /* Firefox and Safari have margin */
   overflow: visible; /* Edge hides overflow */
