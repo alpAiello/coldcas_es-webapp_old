@@ -46,7 +46,7 @@ export default {
 @media (min-width: 1200px) {
   .PopUp {
     top: 15vh;
-    bottom: 10vh;
+    bottom: 65vh;
     width: 30vw;
   }
   .popUpText {
@@ -56,7 +56,7 @@ export default {
 @media (max-width: 1200px) {
   .PopUp {
     top: 15vh;
-    bottom: 10vh;
+    bottom: 65vh;
     width: 90vw;
   }
   .popUpText {
