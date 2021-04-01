@@ -134,7 +134,7 @@ export default {
   .projectContainer {
     position: relative;
     width: 80vw;
-    height:60vw;
+    height:60vh;
     margin: 1vw 2vw;
     overflow: hidden;
   }
