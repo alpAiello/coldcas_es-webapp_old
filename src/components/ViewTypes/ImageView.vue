@@ -1,7 +1,7 @@
 <template>
   <div :class="imageViewClass">
     <img
-        :src="view.media.url"
+        :src="view.media.formats.large.url"
         :alt="view.media.alternativeText"
     />
   </div>
