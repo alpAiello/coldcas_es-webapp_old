@@ -1,5 +1,9 @@
 <template>
   <div class="PopUp">
+    <h1>
+
+      {{ getTitle }}
+    </h1>
     <p class="popUpText">
       {{ getAboutText }}
     </p>
@@ -21,11 +25,26 @@ export default {
 
       console.log();
       console.log();
-      return this.projects.filter((project) => {
+      const projectData = this.projects.filter((project) => {
         console.log("project.id", project.id);
         console.log("projectId", this.projectId);
         return project.id == this.projectId;
-      })[0].description;
+      })[0];
+      return projectData.description
+    },
+    getTitle() {
+      if (this.projects.length == 0 || this.projectId == undefined) {
+        return;
+      }
+
+      console.log();
+      console.log();
+      const projectData = this.projects.filter((project) => {
+        console.log("project.id", project.id);
+        console.log("projectId", this.projectId);
+        return project.id == this.projectId;
+      })[0];
+      return projectData.title
     },
   },
   mounted() {},
