@@ -3,7 +3,7 @@
     <ListOfFilters @updateFilter="updateProjects($event)"></ListOfFilters>
     <div class="projects">
       <div
-        v-on:mouseover="
+      v-on:mouseover="
           showDescription(
             'projectHoverText' + project.id,
           )

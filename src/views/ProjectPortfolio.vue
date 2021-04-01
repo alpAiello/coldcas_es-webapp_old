@@ -41,7 +41,8 @@ export default {
     },
   },
   methods: {},
-  async mounted() {},
+  async mounted() {
+  },
   unmounted() {},
 };
 </script>
