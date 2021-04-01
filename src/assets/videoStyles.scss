@@ -1,4 +1,4 @@
-$primary-foreground-color: #567435;
+$primary-foreground-color: #d3c0ff;
 $primary-background-color: #2b333f;
 $center-big-play-button: true;
 
@@ -9,11 +9,11 @@ $center-big-play-button: true;
 
 .vjs-default-skin .vjs-big-play-button {
   border: .06666em solid $primary-foreground-color;
-  $big-play-width: 3em;
-  $big-play-height: 1.5em;
+  $big-play-width: 20px;
+  $big-play-height: 20px;
 
   border-radius: 10em;
-  font-size: 5em;
+  font-size: 12px;
   height: $big-play-height;
   line-height: $big-play-height;
   width: $big-play-width;
@@ -24,7 +24,7 @@ $center-big-play-button: true;
     margin-top: -($big-play-height / 2);
     top: 50%;
   } @else {
-    left: .5em;
-    top: .5em;
+    left: 50%;
+    top: 50%;
   }
 }

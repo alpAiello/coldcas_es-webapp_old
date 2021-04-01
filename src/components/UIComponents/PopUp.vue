@@ -58,14 +58,16 @@ export default {
   right: 0;
   color: white;
   background-color: rgba(50, 50, 50, 0.7);
-  backdrop-filter: drop-shadow(2px 2px 3px);
   padding: 2vw;
+  filter: drop-shadow(5px 5px 10px white);
+}
+.PopUp p, .PopUp h1{
 }
 
 @media (min-width: 1200px) {
   .PopUp {
     top: 15vh;
-    bottom: 65vh;
+    bottom: 55vh;
     width: 20vw;
   }
   .popUpText {
