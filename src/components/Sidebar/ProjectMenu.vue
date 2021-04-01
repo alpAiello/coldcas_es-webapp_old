@@ -114,7 +114,6 @@ export default {
     width: 35vw;
     margin: 1vw 2vw;
     overflow: hidden;
-    height:30vw;
   }
 
   .ProjectHoverText {

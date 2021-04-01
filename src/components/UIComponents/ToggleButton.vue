@@ -22,7 +22,7 @@ export default {
 
 <style scoped>
 .ToggleButton {
-  color: black;
+  color: white;
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -30,7 +30,7 @@ export default {
   width: 10vw;
   height: 10vw;
   background-color: transparent;
-  filter: drop-shadow(5px 5px 10px black);
+  filter: drop-shadow(5px 5px 10px white);
 }
 @media (min-width: 1200px) {
   .ToggleButton{

@@ -26,7 +26,8 @@ export default {
 
 <style scoped>
 .Spacer{
-  padding: 10vh;
+  padding: 13vh;
+  background-color: #27e9c6;
 }
 .TextView {
   margin: auto;
@@ -39,9 +40,9 @@ export default {
 }
 .innerContainer{
   display: block;
-  column-width: 90vw;
+  column-width: 70vw;
   column-gap: 10vw;
-  height: 70vh;
+  height: 60vh;
 }
 .TextView {
   text-underline: none;
@@ -49,6 +50,9 @@ export default {
 .TextView >>> img{
   max-height: 50vh;
   max-width: 100%;
+}
+.TextView >>> h1,.TextView >>>h2,.TextView >>>h3,.TextView >>>p{
+  width: 70vw;
 }
 
 .TextView span {
