@@ -47,11 +47,11 @@ export default {
 .TextView {
   text-underline: none;
 }
-.TextView >>> img{
+.TextView::deep(img) {
   max-height: 50vh;
   max-width: 100%;
 }
-.TextView >>> h1,.TextView >>>h2,.TextView >>>h3,.TextView >>>p{
+.TextView::deep(h1),.TextView::deep(h2),.TextView::deep(h3),.TextView::deep(p){
   width: 70vw;
 }
 

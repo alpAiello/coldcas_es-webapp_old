@@ -1,8 +1,8 @@
 <template>
   <div :class="imageViewClass">
     <img
-        :src="view.media.formats.large.url"
-        :alt="view.media.alternativeText"
+        :src="'https://sandy.uber.space' + view.media.image.url"
+        :alt="view.media.image.alternativeText"
     />
   </div>
 </template>

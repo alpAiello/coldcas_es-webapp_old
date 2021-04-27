@@ -24,8 +24,8 @@ export default {
         controls: true,
         sources: [
           {
-            src: this.view.media.url,
-            type: this.view.media.mime,
+            src: 'https://sandy.uber.space' + this.view.media.video.url,
+            type: this.view.media.video.mime,
           },
         ],
       },

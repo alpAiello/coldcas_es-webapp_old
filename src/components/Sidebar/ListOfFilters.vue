@@ -35,7 +35,7 @@ export default {
     }
   },
   async mounted() {
-    const result = await axios.get("https://coldcases-cms.herokuapp.com/artists");
+    const result = await axios.get("https://sandy.uber.space/artists");
     console.log("result", result.data);
     this.artists = [...result.data];
   },

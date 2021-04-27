@@ -32,11 +32,11 @@ export default {
   watch: {},
   computed: {
     project() {
-      if (this.projects.length == 0) {
+      if (this.projects.length === 0) {
         return {};
       }
       return this.projects.filter((project) => {
-        return project.id == this.$route.params.id;
+        return project.id === this.$route.params.id;
       })[0];
     },
   },

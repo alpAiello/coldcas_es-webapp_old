@@ -52,10 +52,10 @@ export default {
       let contentIndexes = [];
       this.projects.forEach((project) => {
         let projectId = project.id;
-        project.content.forEach(() => contentIndexes.push(projectId));
+        project.projectPage.forEach(() => contentIndexes.push(projectId));
       });
       let projectId = this.projects.filter(
-        (project) => project.id == contentIndexes[indexOfProject]
+        (project) => project.id === contentIndexes[indexOfProject]
       );
       this.currentProjectNumber = projectId[0].id;
     },
@@ -66,7 +66,7 @@ export default {
   },
   async mounted() {
     const result = await axios.get(
-      "https://coldcases-cms.herokuapp.com/projects?_sort=projectDate:desc"
+      "https://sandy.uber.space/projects"
     );
     this.projects = result.data;
     console.log("-> result.data", result.data);

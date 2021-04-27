@@ -2,21 +2,21 @@
   <div class="inheritSize" v-if="onlyPoster">
     <ImageView
       :view-size="viewSize"
-      :view="project.content[0]"
-      v-if="testIfImage(project.content[0])"
+      :view="project.projectPage[0]"
+      v-if="testIfImage(project.projectPage[0])"
     ></ImageView>
     <VideoView
       :view-size="viewSize"
-      :view="project.content[0]"
-      v-if="testIfVideo(project.content[0])"
+      :view="project.projectPage[0]"
+      v-if="testIfVideo(project.projectPage[0])"
     ></VideoView>
     <TextView
-      :view="project.content[0]"
-      v-if="project.content[0].media == null"
+      :view="project.projectPage[0]"
+      v-if="project.projectPage[0].media == null"
     ></TextView>
   </div>
   <div class="Project" v-if="!onlyPoster">
-    <div class="View" v-for="view in project.content" :key="view.id">
+    <div class="View" v-for="view in project.projectPage" :key="view.id">
       <ImageView
         :view-size="viewSize"
         :view="view"
@@ -51,10 +51,10 @@ export default {
   },
   methods: {
     testIfImage: (view) => {
-      return view.media && view.media.mime.startsWith("image/");
+      return view.media && view.media.image;
     },
     testIfVideo: (view) => {
-      return view.media && view.media.mime.startsWith("video/");
+      return view.media && view.media.video;
     },
   },
   mounted() {
